@@ -1,0 +1,39 @@
+@startuml
+
+title __Schema UML Studiu Rosca__
+
+    namespace rosca.studiu.classes {
+        class Masina {
+            - final int id;
+            - final String marca;
+            - final String model;
+            - final int anCrearii;
+            - final String culoare;
+            - final double pret;
+            - final String numarInregistrare;
+
+            --
+            @Override
+            +String toString()
+            --
+            +Masina(int id, String marca, String model, int anCrearii, String culoare, double pret, String numarInregistrare)
+            +static void afisareaConformMarca(String marca, List<Masina> lista)
+            +static void afisareaModelAn(String model, int an, List<Masina> lista)
+            +static void afisareaDupaCuloare(String culoare, List<Masina> lista)
+            +static void afisareaDupaNumar(String numarInregistrare, List<Masina> lista)
+            +static void afisareaMarcaPret(String marca, double pret, List<Masina> lista)
+            +static void afisareLista(List<Masina> lista)
+            +static void clearScreen()
+            static void meniu()
+        }
+    }
+
+    namespace rosca.studiu.test {
+        class Main {
+            List<Masina> listaMasini
+            switch()
+        }
+    }
+
+    rosca.studiu.test.Main --up|> rosca.studiu.classes.Masina
+@enduml

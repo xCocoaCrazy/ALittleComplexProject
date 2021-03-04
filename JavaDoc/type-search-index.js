@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"rosca.studiu.test","l":"Main"},{"p":"rosca.studiu.classes","l":"Masina"}];updateSearchResults();
